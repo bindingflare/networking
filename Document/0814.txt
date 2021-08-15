@@ -1,0 +1,33 @@
+인증 레벨 : 1 - 15
+레벨 1 : 일반 사용자
+레벨 2 - 14 : 일반 관리자
+레벨 15 : 최고 관리자
+
+Setup Mode
+ctrl + c
+
+일반 사용자 모드(User Mode) : >
+enable
+
+일반 관리자 모드(Previliage Mode) : #
+configure terminal
+
+최고 관리자 모드(전역 설정 모드) : (config)#
+모든 설정의 시작
+
+
+
+? : 현재 커서에서 사용 가능한 명령/옵션 리스트 
+tab : 명령 자동 완성
+
+% Ambiguous command: "s"
+:명령을 구분할 수 없을 때
+% Incomplete command.
+:명령 미완성
+% Invalid input detected at '^' marker.
+:잘못된 명령
+
+
+
+
+

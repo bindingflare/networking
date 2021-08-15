@@ -1,0 +1,61 @@
+관리지 모드 진입 : enable
+
+설정 모드 진입 : conf t
+
+접속 인증 : 
+line console 0
+password cisco
+login
+exit
+
+line vty 0 4
+password cisco
+login
+exit
+
+관리자 인증 :
+최고 관리자 : enable password cisco
+레벨10 관리자 : enable password level 10 cisco10
+
+경고 메시지 :
+banner motd #
+Warnning!!!. 
+Access Denied!!!.
+#
+
+line console 0
+exec-timeout 0 0
+exit
+
+Host 이름 변경 :
+hostname xxx
+
+domain 기능 비활성
+no ip domain-lookup
+
+
+현재 설정 정보 저장 파일 : running-config
+이전 설정 정보 저장 파일 : startup-config
+
+설정 정보 저장 :
+copy running-config startup-config
+장치의 정보를 확인 :
+show
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

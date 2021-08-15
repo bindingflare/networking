@@ -1,0 +1,31 @@
+탐색기 실행 : win + E
+
+ftp://118.130.22.132
+사용자	: net08
+비밀번호	: net08
+ftp.naver.com
+kks.org
+ctrl + shft + N
+08_network_kks
+
+118.130.22.132 : kks.org
+
+토폴로지 : 네트워크를 구성하는 물리적 형태
+Full Mesh : 네트워크에 참여하는 모든 장치가 1:1연결된 토폴로지 
+Partial Mesh : 네트워크에 참여하는 일부 장치가 1:1연결된 토폴로지 
+ISP : Internet Service Provider. 인터넷 서비스 기업
+Protocol : 통신을 구현 하기 위한 규칙(언제, 무엇을, 어떻게)
+
+Plex : 통신 모드
+-단방향 통신 : Simplex
+-양방향 통신 : Duplex
+ -half duplex : 어느 순간에 하나의 장치만 통신에 참여할 수 있는 모드
+ -full duplex : 여러 대의 장치가 동시에 통신에 참여할 수 있는 모드
+
+CSMA(Carriar Sense Multiple Access) : 데이터를 전송하기 전에 전기를 감지해서 수신전기가 없을 때 송신 개시
+
+CSMA/CD : back off Algorythm을 사용하여 충돌을 제거 하면서, 회선을 감시하는 방식
+
+Ethernet : csma/cd방식으로 frame을 전송하는프로토콜
+
+
