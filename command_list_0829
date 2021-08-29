@@ -1,0 +1,13 @@
+no access-list 1 permit host 172.16.1.10
+no access-list 1 permit host 172.16.1.11
+access-list 1 permit 172.16.1.0 0.0.0.255
+access-list 1 deny 200.200.200.0 0.0.0.255
+access-list 1 permit 172.16.2.0 0.0.0.255
+access-list 1 deny host 172.16.2.3
+
+do clear ip nat tran *
+no ip nat ins sou lis 1 pool pubIP
+no ip nat poo pubIP
+ip nat pool pubIP 200.200.200.10 200.200.200.10 netmask 255.255.255.0
+ip nat inside source list 1 pool pubIP
+ip nat in so li 1 pool pubIP overload
